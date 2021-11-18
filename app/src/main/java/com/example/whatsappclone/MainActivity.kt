@@ -2,6 +2,7 @@ package com.example.whatsappclone
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.fragment.app.Fragment
 import com.example.whatsappclone.adapter.TabViewPagerAdapter
 import com.example.whatsappclone.databinding.ActivityMainBinding
@@ -52,5 +53,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }.attach()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 }

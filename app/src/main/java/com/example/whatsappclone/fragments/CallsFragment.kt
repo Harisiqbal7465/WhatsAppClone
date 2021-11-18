@@ -28,5 +28,6 @@ class CallsFragment : Fragment(R.layout.fragment_calls) {
             this.adapter = adapter
             layoutManager = LinearLayoutManager(requireContext())
         }
+
     }
 }

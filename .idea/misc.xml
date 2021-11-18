@@ -6,7 +6,7 @@
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/drawable/custom_tab_indicator.xml" value="0.240625" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/drawable/ic_baseline_arrow_right_alt_24.xml" value="0.192" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.20925925925925926" />
-        <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/activity_main.xml" value="0.33271719038817005" />
+        <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/fragment_calls.xml" value="0.21041666666666667" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/fragment_chats.xml" value="0.22447916666666667" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/fragment_status.xml" value="0.33" />
@@ -14,6 +14,7 @@
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/list_chats.xml" value="0.25" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/list_status.xml" value="0.33" />
         <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/layout/toolbar_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/New folder/Mobile Development/WhatsAppClone/app/src/main/res/menu/main_menu.xml" value="0.19155555555555556" />
       </map>
     </option>
   </component>

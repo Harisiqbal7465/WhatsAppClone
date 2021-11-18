@@ -9,24 +9,36 @@ import com.example.whatsappclone.model.StatusData
 class StatusListAdapter(
     private val statusList: List<StatusData>
 ): RecyclerView.Adapter<StatusListAdapter.ViewHolder>() {
-    class ViewHolder(val binding: ListStatusBinding): RecyclerView.ViewHolder(binding.root)
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(
-        ListStatusBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false
-        )
-    )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        return ViewHolder.from(parent)
+    }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = statusList[position]
-        holder.binding.apply {
-            statusNameTextView.text = currentItem.statusName
-            statusImage.setImageDrawable(currentItem.statusImage)
-            dateTimeTextView.text = currentItem.statusDateTime
+        holder.bind(currentItem)
+    }
+    
+    override fun getItemCount() = statusList.size
+
+    class ViewHolder private constructor(val binding: ListStatusBinding): RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            currentItem: StatusData
+        ) {
+            binding.apply {
+                statusNameTextView.text = currentItem.statusName
+                statusImage.setImageDrawable(currentItem.statusImage)
+                dateTimeTextView.text = currentItem.statusDateTime
+            }
+        }
+        companion object {
+            fun from(parent: ViewGroup) = ViewHolder(
+                ListStatusBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
         }
     }
 
-    override fun getItemCount() = statusList.size
 }

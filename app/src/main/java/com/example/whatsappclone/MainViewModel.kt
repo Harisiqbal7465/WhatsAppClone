@@ -112,8 +112,8 @@ class MainViewModel : ViewModel() {
             statusDateTime = "5 mint ago"
         ),
         StatusData(
-            statusName = "Hassan Azeem",
             statusImage = AppCompatResources.getDrawable(context, R.drawable.image2),
+            statusName = "Hassan Azeem",
             statusDateTime = "5 mint ago"
         ),
         StatusData(
